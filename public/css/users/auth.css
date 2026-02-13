@@ -1,0 +1,98 @@
+ main{
+    background:var(--bg);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    color:var(--text);
+ }
+ .section{
+    background:rgba(0,0,0,0.8);
+    box-shadow:0 0 30px rgba(100, 255, 100,0.3);
+    border-radius:20px;
+    max-width:500px;
+    padding-top:50px;
+    padding-bottom: 50px;;
+ }
+ .hr{
+    width:80%;
+    height:2px;
+    border:none;
+    background:linear-gradient(to right,transparent,var(--primary),transparent);
+    box-shadow:0 0 10px var(--primary);
+ }
+ .cont{
+    border:1px solid rgba(0,0,0,0.4);
+    background:inherit;
+    height:50px;
+    border-radius:10px !important;
+    color:white;
+    background:var(--bg-light);
+    
+    align-items:center;
+    position:relative;
+ }
+ .cont:hover{
+    border:1px solid #708090;
+   
+ }
+ button.post{
+    width:100%;
+    height:50px;
+    /* font-family:poppins; */
+    padding:10px;
+    border:none;
+   
+ }
+ input{
+    background:transparent;
+    width:100%;
+    height:100%;
+    border:none;
+    caret-color: var(--primary);
+ }
+ .prompt{
+   position:absolute;
+   top:100%;
+   left:50%;
+   transform:translateX(-50%);
+   background:var(--primary);
+   z-index:var(--z-index-low);
+   color:black;
+   padding:5px 10px;
+   font-size:0.5rem;
+   border-radius:4px;
+   display:none;
+ }
+ .prompt::before{
+   content:'';
+   position:absolute;
+   bottom:100%;
+   border-left:4px solid transparent;
+   border-right:4px solid transparent;
+   border-bottom:4px solid var(--primary);
+ }
+.form-house{
+   width:100%;
+   background:var(--bg-light);
+   box-shadow:0 0 10px rgba(0,0,0,0.3);
+   border-radius:10px;
+   padding:0 !important;
+   overflow: hidden;
+}
+.logo-house{
+   width:100%;
+   height:fit-content;
+   background:var(--primary-light);
+   color:var(--primary-text);
+   display: flex;
+   align-items:center;;
+   justify-content:center;
+   flex-direction: column;
+   padding:20px;
+}
+.form-house form{
+   padding:20px;
+   background:var(--bg)
+}
