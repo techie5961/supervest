@@ -3,7 +3,12 @@
     Dashboard
 @endsection
 @section('css')
-   
+   <style class="css">
+    .navs .nav{
+      padding-bottom:10px;
+      padding-top:10px;
+    }
+   </style>
 @endsection
 @section('main')
   <section class="w-full column p-10 g-10">
@@ -12,7 +17,7 @@
  {{-- NAVS --}}
  <div style="box-shadow:0 0 10px rgba(0,0,0,0.1)" class="w-full navs row p-10 br-10 g-10 bg-light">
     {{-- NAV --}}
-    <div onclick="spa(event,'{{ url('users/deposit') }}')" style="max-width:25% !important;background: linear-gradient(to bottom right,blue,rgb(1, 1, 97));color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
+    <div onclick="spa(event,'{{ url('users/deposit') }}')" style="min-height=100% !important;max-width:25% !important;background: linear-gradient(to bottom right,blue,rgb(1, 1, 97));color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,168,96H136V32a8,8,0,0,0-16,0V96H88a8,8,0,0,0-5.66,13.66Z"></path></svg>
             
@@ -20,7 +25,7 @@
         <strong class="text-center">Deposit</strong>
     </div>
      {{-- NAV --}}
-    <div onclick="spa(event,'{{ url('users/withdraw') }}')" style="max-width:25% !important;background: linear-gradient(to bottom right,#4caf50,green);color:white" class="w-full h-full nav p-5 br-10 column g-10 justify-center align-center">
+    <div onclick="spa(event,'{{ url('users/withdraw') }}')" style="min-height=100% !important;max-width:25% !important;background: linear-gradient(to bottom right,#4caf50,green);color:white" class="w-full h-full nav p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0ZM88,80h32v64a8,8,0,0,0,16,0V80h32a8,8,0,0,0,5.66-13.66l-40-40a8,8,0,0,0-11.32,0l-40,40A8,8,0,0,0,88,80Z"></path></svg>
 
@@ -28,7 +33,7 @@
         <strong class="text-center">Withdraw</strong>
     </div>
       {{-- NAV --}}
-    <div onclick="spa(event,'{{ url('users/products') }}')" style="max-width:25% !important;background: linear-gradient(to bottom right,rgb(248, 102, 49),orangered);color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
+    <div onclick="spa(event,'{{ url('users/products') }}')" style="min-height=100% !important;max-width:25% !important;background: linear-gradient(to bottom right,rgb(248, 102, 49),orangered);color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM128,160a48.05,48.05,0,0,1-48-48,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0A48.05,48.05,0,0,1,128,160ZM40,72V56H216V72Z"></path></svg>
 
@@ -36,7 +41,7 @@
         <strong class="text-center">My Products</strong>
     </div>
       {{-- NAV --}}
-    <div onclick="spa(event,'{{ url('users/gift/code') }}')" style="max-width:25% !important;background: linear-gradient(to bottom right,purple,rgb(59, 1, 59));color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
+    <div onclick="spa(event,'{{ url('users/gift/code') }}')" style="min-height=100% !important;max-width:25% !important;background: linear-gradient(to bottom right,purple,rgb(59, 1, 59));color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16h60a4,4,0,0,0,4-4V120H40V88h80v32h16V88h80v32H136v92a4,4,0,0,0,4,4h60a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM84.51,59a13.69,13.69,0,0,1-4.5-10A16.62,16.62,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92C109.71,70.39,94,67.43,84.51,59Zm87,0c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08,13.69,13.69,0,0,1,171.49,59Z"></path></svg>
 
@@ -146,22 +151,22 @@
                 spa(event,'{{ url('users/products') }}');
               }
     },
-    Style : function(){
+    Restyle : function(){
       let max_height=0;
-      document.querySelectorAll('.navs .nav').Foreach((nav)=>{
+      document.querySelectorAll('.navs .nav').forEach((nav)=>{
         if(nav.getBoundingClientRect().height > max_height){
-          max_height= nav.getBoundingClientRect().height;
+          max_height = nav.getBoundingClientRect().height;
         }
-      
-
       });
-        document.querySelectorAll('.navs .nav').Foreach((nav)=>{
-      nav.style.height=max_height + 'px';
-      
-
-      })
+      document.querySelectorAll('.navs .nav').forEach((nav)=>{
+        nav.style.height=max_height + 'px';
+         });
+   
+     
     }
+  
    }
-   MyFunc.Style();
+   MyFunc.Restyle();
+
 </script>
 @endsection
