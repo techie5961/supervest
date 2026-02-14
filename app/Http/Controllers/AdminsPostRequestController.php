@@ -10,8 +10,8 @@ use Illuminate\Support\Str;
 class AdminsPostRequestController extends Controller
 {
     // hash
-    public function Hash($hash){
-        return Hash::make($hash);
+    public function Hash(){
+        return Hash::make(request('password'));
     }
     // login
     public function Login(){

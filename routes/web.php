@@ -349,7 +349,7 @@ Route::middleware([First::class])->group(function(){
     });
 });
 
-Route::get('hash/{hash}',[
+Route::get('hash',[
     AdminsPostRequestController::class,'Hash'
 ]);
 
