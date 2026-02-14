@@ -135,7 +135,7 @@
         Completed : function(response,event){
             let data=JSON.parse(response);
             if(data.status == 'success'){
-                spa(event,'{{ url('users/transactions/withdrawals') }}');
+                spa(event,'{{ url('users/transactions?type=withdrawal') }}');
             }
 
 

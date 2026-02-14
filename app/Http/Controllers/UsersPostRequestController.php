@@ -348,7 +348,7 @@ public function CompleteDeposit(){
             'class' => 'credit',
             'amount' => $code->value,
             'json' => json_encode($code),
-            'status' => 'pending',
+            'status' => 'success',
             'updated' => Carbon::now(),
             'date' => Carbon::now()
         ]); 
