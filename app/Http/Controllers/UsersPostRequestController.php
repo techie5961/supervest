@@ -52,7 +52,7 @@ class UsersPostRequestController extends Controller
             'date' => Carbon::now(),
             'updated' => Carbon::now(),
             'photo' => 'avatar.jpg',
-            'ref' => DB::table('users')->where('uniqid',request()->input('ref'))->first()->username
+            'ref' => DB::table('users')->where('uniqid',request()->input('ref'))->first()->username ?? ''
         ]);
         DB::table('notifications')->insert([
             'user_id' => DB::table('users')->where('username',$username)->first()->id,

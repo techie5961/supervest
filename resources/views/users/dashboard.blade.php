@@ -8,7 +8,7 @@
 @section('main')
   <section class="w-full column p-10 g-10">
     {{-- BANNER --}}
-<img style="box-shadow:0 0 10px rgba(0,0,0,0.1)" src="{{ asset('banners/'.$banner_settings->earning_structure.'') }}" alt="Earning Structure Banner" class="w-full box-shadow max-w-500 br-10">
+<img style="box-shadow:0 0 10px rgba(0,0,0,0.1)" src="{{ asset('banners/'.$banner_settings->earning_structure.'') }}" alt="Earning Structure Banner" class="w-full m-x-auto box-shadow max-w-500 br-10">
  {{-- NAVS --}}
  <div style="box-shadow:0 0 10px rgba(0,0,0,0.1)" class="w-full grid grid-4 p-10 br-10 g-10 bg-light">
     {{-- NAV --}}

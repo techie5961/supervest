@@ -3,7 +3,7 @@
      Register
  @endsection
  @section('main')
-     <section class="justify-center form-house column w-full p-10">
+     <section class="justify-center max-w-500 m-x-auto form-house column w-full p-10">
     <div class="logo-house">
       <img class="h-70" src="{{ asset('images/logo.png?v='.config('versions.vite_version').'') }}" alt="">
     </div>
