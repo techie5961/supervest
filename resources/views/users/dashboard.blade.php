@@ -13,7 +13,7 @@
  <div style="box-shadow:0 0 10px rgba(0,0,0,0.1)" class="w-full row p-10 br-10 g-10 bg-light">
     {{-- NAV --}}
     <div onclick="spa(event,'{{ url('users/deposit') }}')" style="max-width:25% !important;background: linear-gradient(to bottom right,blue,rgb(1, 1, 97));color:white" class="w-full h-full p-5 br-10 column g-10 justify-center align-center">
-        <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-1g`perfect-square column justify-center">
+        <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,168,96H136V32a8,8,0,0,0-16,0V96H88a8,8,0,0,0-5.66,13.66Z"></path></svg>
             
         </div>
