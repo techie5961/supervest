@@ -13,7 +13,7 @@
     {{-- TITLE --}}
     <strong class="desc m-x-auto">Login</strong>
         <input type="hidden" name="_token" value="{{ csrf_token() }}" class="input">
-       
+         
       
        {{-- NEW INPUT GROUP --}}
       <div class="w-full column g-5">
