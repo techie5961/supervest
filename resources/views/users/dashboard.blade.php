@@ -152,7 +152,12 @@
         if(nav.getBoundingClientRect().height > max_height){
           max_height= nav.getBoundingClientRect().height;
         }
-        document.querySelector('.nav').style.height=(max_height + 20) + 'px'
+      
+
+      });
+        document.querySelectorAll('.navs .nav').Foreach((nav)=>{
+      nav.style.height=max_height + 'px';
+      
 
       })
     }
