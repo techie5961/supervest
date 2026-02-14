@@ -2036,7 +2036,6 @@ button.post.active .working,button.btn.active .working{
 }
 .grid-4{
     gap:4px;
-
 }
 .g-5{
     gap:5px;
@@ -2063,7 +2062,6 @@ button.post.active .working,button.btn.active .working{
 }
 .grid-2{
     grid-template-columns: repeat(2,1fr);
-    -webkit-grid-template-columns: repeat(2,1fr);
 }
 .grid-full{
     grid-column: 1/-1;
@@ -2074,32 +2072,24 @@ button.post.active .working,button.btn.active .working{
 }
 .grid-4{
     grid-template-columns: repeat(4,1fr);
-     -webkit-grid-template-columns: repeat(4,1fr);
-    
 }
 .grid-5{
     grid-template-columns: repeat(5,1fr);
-    -webkit-grid-template-columns: repeat(5,1fr);
 }
 .grid-6{
     grid-template-columns: repeat(6,1fr);
-    -webkit-grid-template-columns: repeat(6,1fr);
 }
 .grid-7{
     grid-template-columns: repeat(7,1fr);
-    -webkit-grid-template-columns: repeat(7,1fr);
 }
 .grid-8{
     grid-template-columns: repeat(8,1fr);
-    -webkit-grid-template-columns: repeat(8,1fr);
 }
 .grid-9{
     grid-template-columns: repeat(9,1fr);
-    -webkit-grid-template-columns: repeat(9,1fr);
 }
 .grid-10{
     grid-template-columns: repeat(10,1fr);
-    -webkit-grid-template-columns: repeat(10,1fr);
 }
 .align-center{
     align-items:center;
