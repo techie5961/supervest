@@ -16,7 +16,8 @@ class UsersDashboardController extends Controller
       $products=DB::table('products')->orderBy('price','asc')->get();
         return view('users.dashboard',[
             'products' => $products,
-           'banner_settings' => json_decode(DB::table('settings')->where('key','banner_settings')->first()->json ?? '{}')
+           'banner_settings' => json_decode(DB::table('settings')->where('key','banner_settings')->first()->json ?? '{}'),
+            'general_settings' => json_decode(DB::table('settings')->where('key','general_settings')->first()->json ?? '{}')
       
         ]);
     } 

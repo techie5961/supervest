@@ -64,7 +64,7 @@
           <div class="column g-5 w-full">
             <label for="">Whatsapp Group Link</label>
             <div class="cont required">
-                <input value="{{ $general_settings->group_link }}" name="group_link" placeholder="E.g https://site-group-link.com" type="url" class="inp input required">
+                <input value="{{ $general_settings->whatsapp_group ?? '' }}" name="whatsapp_group" placeholder="E.g https://link-to-wjhatsapp-group.com" type="url" class="inp input required">
                 <div class="prompt"><i>Required</i></div>
             </div>
           </div>
@@ -72,7 +72,7 @@
           <div class="column g-5 w-full">
             <label for="">Telegram Group Link</label>
             <div class="cont required">
-                <input value="{{ $general_settings->popup_link ?? '' }}" name="popup_link" placeholder="E.g https://popup-link.com" type="url" class="inp input required">
+                <input value="{{ $general_settings->telegram_group ?? '' }}" name="telegram_group" placeholder="E.g https://link-to-telegram-group" type="url" class="inp input required">
                 <div class="prompt"><i>Required</i></div>
             </div>
           </div>

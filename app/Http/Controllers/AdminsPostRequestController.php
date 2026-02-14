@@ -101,8 +101,8 @@ class AdminsPostRequestController extends Controller
     public function GeneralSettings(){
         $json=[
               'signup_bonus' => request()->input('signup_bonus'),
-                'group_link' => request()->input('group_link'),
-                'popup_link' => request()->input('popup_link'),
+                'whatsapp_group' => request()->input('whatsapp_group'),
+                'telegram_group' => request()->input('telegram_group'),
                 'popup_message' => request()->input('popup_message'),
                 'daily_check_in' => request()->input('daily_check_in')
                 
