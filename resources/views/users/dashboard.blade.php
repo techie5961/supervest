@@ -175,12 +175,12 @@
     },
     Restyle : function(){
       let max_height=0;
-      document.querySelectorAll('.navs .nav').forEach((nav)=>{
+      document.querySelectorAll('main .navs .nav').forEach((nav)=>{
         if(nav.getBoundingClientRect().height > max_height){
           max_height = nav.getBoundingClientRect().height;
         }
       });
-      document.querySelectorAll('.navs .nav').forEach((nav)=>{
+      document.querySelectorAll('main .navs .nav').forEach((nav)=>{
         nav.style.height=max_height + 'px';
          });
    
